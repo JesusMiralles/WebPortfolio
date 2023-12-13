@@ -1,0 +1,214 @@
+
+/* Estilo del encabezado */
+header {
+    background: #a94444;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/* Estilo del contenido principal */
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #7d7d7dd6;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+#sobre-mi, #proyectos {
+    margin-bottom: 30px;
+}
+
+#proyectos .proyecto {
+    margin-bottom: 30px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#proyectos .proyecto img {
+    max-width: 100%;
+}
+
+
+body {
+    background: linear-gradient(135deg, rgb(181, 181, 181), rgb(97, 92, 88), rgb(151, 149, 149));
+    font-size: 1.6rem;
+}
+#curriculum {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#curriculum h2 {
+    font-size: 2rem;
+}
+
+.curriculum {
+    line-height: 1.6;
+}
+
+
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(249, 249, 249);
+    font-weight: bold;
+}
+
+/* Estilos del contenido principal */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#sobre-mi, #proyectos, #contacto {
+    margin-bottom: 30px;
+}
+
+#proyectos .proyecto {
+    margin-bottom: 30px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#proyectos .proyecto img {
+    max-width: 100%;
+}
+
+
+/* Enlaces más interactivos */
+nav a:hover, footer a:hover {
+    color: rgb(178, 176, 176);
+}
+
+/* Botones para los proyectos */
+.proyecto h3 {
+    background: rgb(255, 108, 3);
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+header {
+    background: #ff6f00;
+   
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/* Estilo del contenido principal */
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+#sobre-mi, #proyectos {
+    margin-bottom: 30px;
+}
+
+#proyectos .proyecto {
+    margin-bottom: 30px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#proyectos .proyecto img {
+    max-width: 100%;
+}
+
+
+footer {
+    background: #ff6f01fe;
+   
+    text-align: center;
+    padding: 15px 0;
+    border-top: 2px
+}
+
+
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+}
+
+
+ 
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,97 @@
+<?php
+$servidor = "localhost"; // El servidor que utilizaremos, en este caso será el localhost
+$usuario = "prueba"; // El usuario que acabamos de crear en la base de datos
+$contraseña = "prueba123"; // La contraseña del usuario que utilizaremos
+$BD = "conectar"; // El nombre de la base de datos
+/*
+Aquí abrimos la conexión en el servidor. Normalmente se envian 3 parametros (los datos
+del servidor, usuario y contraseña) a la función mysql_connect, si no hay ningún error la
+conexión será un éxito El @ que se ponde delante de la funcion, es para que no muestre
+el error al momento de ejecutarse, ya crearemos un código para eso
+*/
+$conexion = @mysql_connect($servidor, $usuario, $contrasenha);
+* /Aquí preguntamos si la conexión no pudo realizarse, de ser así lanza un mensaje en la pantalla con el siguiente
+texto "No pudo conectarse:" y le agrega el error ocurrido con "mysql_error()"
+*/
+if (!$conexion) {
+ die('<strong>No pudo conectarse:</strong> ' . mysql_error());
+}else{
+ // La siguiente linea no es necesaria, simplemente la pondremos ahora para poder observar que la conexión ha
+sido realizada
+ echo 'Conectado satisfactoriamente al servidor <br />';
+}
+mysql_select_db($BD, $conexion) or die(mysql_error($conexion));
+?>
+
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Portafolio Jesus Miralles</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#acerca-de-mi">Acerca de Mí</a></li>
+                <li><a href="#curriculum">Currículum</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="inicio">
+            <h1>¡Bienvenido a mi Portafolio!</h1>
+            <p>Soy un desarrollador junior en proceso con conocimientos basicos de aplicaciones web y móviles.</p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos Destacados</h2>
+            <div class="proyecto">
+                <img src="proyecto1.jpg" alt="Proyecto 1">
+                <h3>Proyecto 1</h3>
+                <p>Este fue mi primer proyecto de mi Primera web</p>
+            </div>
+            <div class="proyecto">
+                <img src="proyecto2.jpg" alt="Proyecto 2">
+                <h3>Proyecto 2</h3>
+                <p>El Proyecto 2 consiste en la creacion de una tienda online.</p>
+            </div>
+        </section>
+
+        <section id="acerca-de-mi">
+            <h2>Acerca de Mí</h2>
+            <p>Soy un pequeño apasionado el desarrollo de aplicaciones web y móviles. Mi experiencia incluye trabajos con lenguajes como Java,HTML,CSS.</p>
+        </section>
+
+        <section id="curriculum">
+            <h2>Currículum</h2>
+            <div class="curriculum">
+                <h3>Educación</h3>
+                <p>Grado medio en Informática - Sistemas microinformaticos y redes</p>
+                <p>Titulacion extra : Certificado de CISCO Network Academy</p>
+                <h3>Experiencia Laboral</h3>
+                <p>Traspaso de sede de una Empresa</p>
+                <p>Residencia de Ancianos Campolivar</p>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme conmigo a través del siguiente correo electrónico: <a href="jesus.mirallescor@gmail.com">jesus.mirallescor@gmail.com</a>. ¡Saludoss!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Portafolio de Jesus Miralles</p>
+    </footer>
+</body>
+</html>
